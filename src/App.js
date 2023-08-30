@@ -29,22 +29,8 @@ function App() {
             <img
               className='spacecraft'
               src={require('./imgs/rocket-flying-through-space.jpg')}
-              // style={{ display: 'block', width: '100%', height: '220%' }}
             />
           </ParallaxLayer>
-          {/* <ParallaxLayer
-            offset={1}
-            speed={1}
-            style={{
-              alignCenter,
-              justifyContent: 'center',
-            }}
-          >
-            <img
-              src={require('./imgs/moon-surface-big-planet-background.jpg')}
-              style={{ display: 'block', width: '100%', height: '100%' }}
-            />
-          </ParallaxLayer> */}
 
           <ParallaxLayer
             offset={0.4}
@@ -57,18 +43,11 @@ function App() {
               Welcome aboard tuna lover!
             </h1>
           </ParallaxLayer>
-          {/* <ParallaxLayer
-            sticky={{ start: 1.1, end: 1.5 }}
-            // style={{
-            //   alignCenter,
-            //   justifyContent: 'center',
-            // }}
+
+          <ParallaxLayer
+            offset={window.innerWidth < 768 ? 1.5 : 1.9}
+            speed={-0.2}
           >
-            <h1 style={{ width: '100%', height: '20%', color: 'white' }}>
-              Our objective: Saturn
-            </h1>
-          </ParallaxLayer> */}
-          <ParallaxLayer offset={2} speed={-0.2}>
             <Crew dataCrew={dataCrew}></Crew>
           </ParallaxLayer>
           <ParallaxLayer
@@ -85,10 +64,9 @@ function App() {
                 <p>
                   A pioneering team of feline astronauts embarks on an
                   extraordinary journey to explore the enigmatic beauty of
-                  Saturn and its captivating rings. The "Purrfect Saturn
-                  Expedition" is a collaborative effort between feline research
-                  specialists and space agencies dedicated to pushing the
-                  boundaries of space exploration.
+                  Saturn. The "Purrfect Saturn Expedition" is a collaborative
+                  effort between feline research specialists and space agencies
+                  dedicated to pushing the boundaries of space exploration.
                 </p>
               </div>
             </div>
@@ -105,12 +83,11 @@ function App() {
                 ></img>
 
                 <p>
-                  Their mission involves a journey of months, during which they
-                  will conduct experiments, gather data, and document the
-                  majestic beauty of Saturn's rings and moons. The crew's
-                  agility, adaptability, and sharp senses prove essential in
-                  maneuvering the spacecraft through the cosmic challenges of
-                  the solar system
+                  It involves a journey of months, during which they will
+                  conduct experiments, gather data, and document the majestic
+                  beauty of Saturn's rings and moons. The crew's agility,
+                  adaptability, and sharp senses is essential in maneuvering the
+                  spacecraft through the cosmic challenges of the solar system
                 </p>
               </div>
             </div>
@@ -125,19 +102,20 @@ function App() {
                 <img
                   src={require('./imgs/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration.jpg')}
                 ></img>
-
-                <p>
-                  <GiCannedFish />
-                </p>
-                <p>
-                  <GiWool />
-                </p>
-                <p>
-                  <GiMilkCarton />
-                </p>
-                <p>
-                  <GiLungs />
-                </p>
+                <div className='loot'>
+                  <p>
+                    <GiCannedFish />
+                  </p>
+                  <p>
+                    <GiWool />
+                  </p>
+                  <p>
+                    <GiMilkCarton />
+                  </p>
+                  <p>
+                    <GiLungs />
+                  </p>
+                </div>
               </div>
             </div>
           </ParallaxLayer>
@@ -150,12 +128,7 @@ function App() {
               justifyContent: 'flex-start',
             }}
           >
-            <div
-              className='cards'
-              style={{
-                color: 'orange',
-              }}
-            >
+            <div className='cards'>
               <h1>One small pawprint for a cat</h1>
             </div>
           </ParallaxLayer>
@@ -167,12 +140,7 @@ function App() {
               justifyContent: 'flex-end',
             }}
           >
-            <div
-              className='cards'
-              style={{
-                color: 'aqua',
-              }}
-            >
+            <div className='cards'>
               <h1>One giant leap for catkind!</h1>
             </div>
           </ParallaxLayer>
