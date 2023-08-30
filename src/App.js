@@ -45,10 +45,10 @@ function App() {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={window.innerWidth < 768 ? 1.5 : 1.9}
+            offset={window.innerWidth < 768 ? 1.3 : 1.9}
             speed={-0.2}
           >
-            <Crew dataCrew={dataCrew}></Crew>
+            <Crew dataCrew={dataCrew} flip={flip} setFlip={setFlip}></Crew>
           </ParallaxLayer>
           <ParallaxLayer
             sticky={{ start: 3, end: 4.5 }}
@@ -104,16 +104,18 @@ function App() {
                 ></img>
                 <div className='loot'>
                   <p>
-                    <GiCannedFish />
+                    <GiCannedFish /> Our crew need food for a year
                   </p>
                   <p>
-                    <GiWool />
+                    <GiWool /> Our crew need to relax during the long journey
+                    entertainment is essential to their mental health
                   </p>
                   <p>
-                    <GiMilkCarton />
+                    <GiMilkCarton /> Who doesn't like a glass of milk
                   </p>
                   <p>
-                    <GiLungs />
+                    <GiLungs /> Air is provided from reserve and the greenhouse
+                    inside the spacecraft
                   </p>
                 </div>
               </div>
@@ -141,7 +143,7 @@ function App() {
             }}
           >
             <div className='cards'>
-              <h1>One giant leap for catkind!</h1>
+              <h1 id='catkind'>One giant leap for catkind!</h1>
             </div>
           </ParallaxLayer>
         </Parallax>
