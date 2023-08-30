@@ -2,19 +2,21 @@ const catCrew = [
   {
     id: 1,
     img: require('./imgs/1920-cat-in-astronaut-helmet-portrait-of-a-cat-in-space-ai-generative-image.jpg'),
-    name: 'Flurball',
+    name: 'Flurball Starpaw',
     role: 'Pilot',
     desc: 'Spacecraft pilot expert',
-    funFact: 'Head scratch',
+    funFact:
+      'A master at interstellar karaoke! She has entertained countless galaxies during long space journeys.',
     like: 'Tuna',
   },
   {
     id: 2,
     img: require('./imgs/1920-cat-in-white-astronaut-costume-ai-generated.jpeg'),
-    name: 'Flurball',
-    role: 'Capitain',
+    name: 'Mr Whiskers',
+    role: 'Captain',
     desc: 'Was the first cat to reach Mars',
-    funFact: 'Was the first cat to reach Mars',
+    funFact:
+      'The first feline ever to master the art of zero-gravity acrobatics.',
     like: 'Tuna',
   },
   {
@@ -22,8 +24,9 @@ const catCrew = [
     img: require('./imgs/1920-ai-generative-a-cat-in-spy-outfit.png'),
     name: 'Stepan',
     role: 'Security',
-    desc: 'Always ready for contact',
-    funFact: 'Ex special force',
+    desc: 'Ex special force',
+    funFact:
+      'Renowned for mastering the art of stealthy movement and camouflage. ',
     like: 'Tuna',
   },
   {
@@ -32,7 +35,7 @@ const catCrew = [
     name: 'Fripou',
     role: 'Engineer',
     desc: 'Graduated with honor from the catstronaut academy',
-    funFact: 'Sleep only 12 hours a day',
+    funFact: 'Sleeps only 12 hours a day',
     like: 'Tuna',
   },
 ];
