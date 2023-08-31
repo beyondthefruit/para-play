@@ -13,8 +13,8 @@ function App() {
   };
   const [flip, setFlip] = useState(false);
   const [dataCrew] = useState(catCrew);
-  console.log(dataCrew);
-  console.log(catCrew);
+  // console.log(dataCrew);
+  // console.log(catCrew);
   return (
     <>
       <div className='background'>
