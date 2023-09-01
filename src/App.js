@@ -1,9 +1,10 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 import { GiCannedFish, GiWool, GiMilkCarton, GiLungs } from 'react-icons/gi';
-
+import { PawPrint } from './imgs/pawprint_1076928.png';
 import catCrew from './data.js';
 import Crew from './Components/crew';
+import Mission from './Components/mission';
 
 function App() {
   const alignCenter = {
@@ -40,7 +41,7 @@ function App() {
             }}
           >
             <h1 style={{ width: '100%', height: '20%', color: 'white' }}>
-              Welcome aboard tuna lover!
+              Welcome aboard tuna lovers
             </h1>
           </ParallaxLayer>
 
@@ -60,14 +61,16 @@ function App() {
                 <img
                   src={require('./imgs/moon-surface-big-planet-background.jpg')}
                 ></img>
-
-                <p>
-                  A pioneering team of feline astronauts embarks on an
-                  extraordinary journey to explore the enigmatic beauty of
-                  Saturn. The "Purrfect Saturn Expedition" is a collaborative
-                  effort between feline research specialists and space agencies
-                  dedicated to pushing the boundaries of space exploration.
-                </p>
+                <div className='text'>
+                  <p>
+                    A pioneering team of feline astronauts embarks on an
+                    extraordinary journey to explore the enigmatic beauty of
+                    Saturn. The "Purrfect Saturn Expedition" is a collaborative
+                    effort between feline research specialists and space
+                    agencies dedicated to pushing the boundaries of space
+                    exploration.
+                  </p>
+                </div>
               </div>
             </div>
           </ParallaxLayer>
@@ -78,17 +81,17 @@ function App() {
             <div className='cards-sticky'>
               <h2>Our Mission</h2>
               <div className='stick'>
-                <img
-                  src={require('./imgs/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration.jpg')}
-                ></img>
-
-                <p>
-                  It involves a journey of months, during which they will
-                  conduct experiments, gather data, and document the majestic
-                  beauty of Saturn's rings and moons. The crew's agility,
-                  adaptability, and sharp senses is essential in maneuvering the
-                  spacecraft through the cosmic challenges of the solar system
-                </p>
+                <img src={require('./imgs/9398462_347251.png')}></img>
+                <div className='text'>
+                  <p>
+                    It involves a journey of months, during which they will
+                    conduct experiments, gather data, and document the majestic
+                    beauty of Saturn's rings and moons. The crew's agility,
+                    adaptability, and sharp senses is essential in maneuvering
+                    the spacecraft through the cosmic challenges of the solar
+                    system
+                  </p>
+                </div>
               </div>
             </div>
           </ParallaxLayer>
@@ -104,18 +107,22 @@ function App() {
                 ></img>
                 <div className='loot'>
                   <p>
-                    <GiCannedFish /> Our crew need food for a year
+                    <GiCannedFish className='icon' />
+                    Our crew need food for a year
                   </p>
                   <p>
-                    <GiWool /> Our crew need to relax during the long journey
-                    entertainment is essential to their mental health
+                    <GiWool className='icon' />
+                    Our crew have to relax during the long journey entertainment
+                    is essential to their mental health
                   </p>
                   <p>
-                    <GiMilkCarton /> Who doesn't like a glass of milk
+                    <GiMilkCarton className='icon' />
+                    Who doesn't like a glass of milk
                   </p>
                   <p>
-                    <GiLungs /> Air is provided from reserve and the greenhouse
-                    inside the spacecraft
+                    <GiLungs className='icon' />
+                    Air is provided from reserve and the greenhouse inside the
+                    spacecraft
                   </p>
                 </div>
               </div>
@@ -131,7 +138,11 @@ function App() {
             }}
           >
             <div className='cards'>
-              <h1>One small pawprint for a cat</h1>
+              <h1>
+                One small pawprint for a cat
+                {/* One small pawprint for a cat <PawPrint /> */}
+              </h1>
+              {/* <img src={require('./imgs/pawprint_1076928.png')} alt='' /> */}
             </div>
           </ParallaxLayer>
           <ParallaxLayer
@@ -159,6 +170,14 @@ function App() {
   Image By freepik
 </a>; */
 }
+{
+  /* <a href='https://www.freepik.com/search?format=search&last_filter=type&last_value=icon&query=cat%20paw&selection=1&type=icon'>
+  Icon by Freepik
+</a>; */
+}
+//<a href="https://www.freepik.com/free-vector/abstract-future-interface-composition_9398462.htm#query=spacecraft%20objectif&position=17&from_view=search&track=ais">Image by macrovector</a> on Freepik
+// <a href="https://www.freepik.com/search?format=search&last_filter=type&last_value=icon&query=cat%20world&selection=1&type=icon">Icon by Freepik</a>
+
 // <a href="https://www.freepik.com/free-photo/space-planet-science-night-generated-by-ai_41219020.htm#&position=4&from_view=collections">Image by vecstock</a> on Freepik
 // <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
 // <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>

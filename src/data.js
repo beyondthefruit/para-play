@@ -41,3 +41,30 @@ const catCrew = [
 ];
 
 export default catCrew;
+
+// const mission = [
+//   {
+//     id: 1,
+//     start: 3,
+//     end: 4.5,
+//     title: 'Our objective SATURN',
+//     img: require('./imgs/moon-surface-big-planet-background.jpg'),
+//     desc: ' A pioneering team of feline astronauts embarks on an extraordinary journey to explore the enigmatic beauty of Saturn. The "Purrfect Saturn Expedition" is a collaborative effort between feline research specialists and space agencies dedicated to pushing the boundaries of space exploration.',
+//   },
+//   {
+//     id: 2,
+//     start: 3.5,
+//     end: 4.5,
+//     title: 'Our objective SATURN',
+//     img: require('./imgs/moon-surface-big-planet-background.jpg'),
+//     desc: ' A pioneering team of feline astronauts embarks on an extraordinary journey to explore the enigmatic beauty of Saturn. The "Purrfect Saturn Expedition" is a collaborative effort between feline research specialists and space agencies dedicated to pushing the boundaries of space exploration.',
+//   },
+//   {
+//     id: 3,
+//     start: 3.5,
+//     end: 4.5,
+//     title: 'Our objective SATURN',
+//     img: require('./imgs/moon-surface-big-planet-background.jpg'),
+//     desc: ' A pioneering team of feline astronauts embarks on an extraordinary journey to explore the enigmatic beauty of Saturn. The "Purrfect Saturn Expedition" is a collaborative effort between feline research specialists and space agencies dedicated to pushing the boundaries of space exploration.',
+//   },
+// ];
