@@ -9,11 +9,6 @@ body {
   background: black;
   /* background: rgba(105, 114, 104); */
 }
-/* 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 *,
 ::after,
@@ -39,8 +34,6 @@ p {
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
-  }
-  h2 {
   }
 }
 
@@ -234,6 +227,12 @@ p {
   margin-right: 1rem;
   top: 4px;
   position: relative;
+}
+.icon2 {
+  transform: scale(0.2);
+  position: relative;
+  right: 0;
+  font-size: 10rem;
 }
 
 .cards {

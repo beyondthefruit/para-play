@@ -1,7 +1,8 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 import { GiCannedFish, GiWool, GiMilkCarton, GiLungs } from 'react-icons/gi';
-import { PawPrint } from './imgs/pawprint_1076928.png';
+// import { PawPrint } from './imgs/pawprint_1076928.svg';
+import { ReactComponent as PawPrint } from './imgs/pawprint_1076928.svg';
 import catCrew from './data.js';
 import Crew from './Components/crew';
 import Mission from './Components/mission';
@@ -140,9 +141,21 @@ function App() {
             <div className='cards'>
               <h1>
                 One small pawprint for a cat
-                {/* One small pawprint for a cat <PawPrint /> */}
+                {/* <PawPrint className='icon2' /> */}
               </h1>
               {/* <img src={require('./imgs/pawprint_1076928.png')} alt='' /> */}
+              {/* <img
+                style={{ width: '20px', height: '20px' }}
+                src={require('./imgs/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration.jpg')}
+              ></img> */}
+              {/* <img
+                style={{ width: '110px', height: '110px', color: 'white' }}
+                src={require('./imgs/9398462_347251.png')}
+              ></img>
+              <img
+                style={{ width: '110px', height: '110px', color: 'white' }}
+                src={require('./imgs/9398462_347251.png')}
+              ></img> */}
             </div>
           </ParallaxLayer>
           <ParallaxLayer
