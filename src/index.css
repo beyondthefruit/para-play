@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background: black;
-  /* background: rgba(105, 114, 104); */
 }
 
 *,
@@ -37,15 +36,6 @@ p {
   }
 }
 
-/* .background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-} */
 .spacecraft {
   display: block;
   width: 100%;
@@ -64,9 +54,6 @@ p {
   text-align: center;
   margin: 0 auto 1rem;
 }
-/* .crew-part h1 {
-  color: white;
-} */
 
 .crew {
   display: flex;
@@ -228,12 +215,6 @@ p {
   top: 4px;
   position: relative;
 }
-.icon2 {
-  transform: scale(0.2);
-  position: relative;
-  right: 0;
-  font-size: 10rem;
-}
 
 .cards {
   display: flex;
@@ -250,6 +231,13 @@ p {
 #catkind {
   color: #a2141e;
 }
+/* see if I can include a paw icon later */
+/* .icon2 {
+  transform: scale(0.2);
+  position: relative;
+  right: 0;
+  font-size: 10rem;
+} */
 
 @media screen and (min-width: 400px) {
   .cards-sticky {
@@ -266,24 +254,14 @@ p {
 
 @media screen and (min-width: 768px) {
   .cards-sticky {
-    background: rgba(105, 114, 104);
     height: 17rem;
-    width: 90%;
     text-align: center;
-    border-radius: 10px;
-    border: 2px ridge rgba(245, 245, 245);
   }
   .cards-sticky h2 {
     padding-top: 0.7rem;
     font-size: 1.5rem;
     font-weight: 400;
   }
-
-  /* .cards-sticky p {
-    font-size: 1.3rem;
-    text-align: justify;
-    padding: 0.3rem;
-  } */
 
   .stick {
     display: flex;
@@ -307,14 +285,5 @@ p {
   }
   .loot p {
     font-size: 1.1rem;
-  }
-  .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 5%;
-    width: 40%;
-    height: 60%;
   }
 }
