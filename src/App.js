@@ -28,6 +28,8 @@ function App() {
             <img
               className='spacecraft'
               src={require('./imgs/rocket-flying-through-space.jpg')}
+              srcset={`${require('./imgs/small-rocket-flying-through-space.jpg')} 450w, ${require('./imgs/medium-rocket-flying-through-space.jpg')} 768w, ${require('./imgs/rocket-flying-through-space.jpg')} 1280w`}
+              sizes='(max-width: 450px) 450px,(max-width: 768px) 768px, 1280px'
               alt='rocket flying'
               rel='preload'
             />
