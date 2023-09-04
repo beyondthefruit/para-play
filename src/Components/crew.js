@@ -2,13 +2,10 @@ import { useState } from 'react';
 import Cat from './cat';
 const Crew = ({ dataCrew, flip, setFlip }) => {
   const [save, setSave] = useState(null);
-  // let save = null;
   const handleCLick = (id) => {
     setFlip(!flip);
     const updatedid = id;
-    // save = updatedid;
     setSave(updatedid);
-    console.log(save);
   };
 
   return (
@@ -45,14 +42,11 @@ const Crew = ({ dataCrew, flip, setFlip }) => {
                   flip={flip}
                   setFlip={setFlip}
                   save={save}
-                  // setSave={setSave}
                 />
               )}
               ;
             </div>
           );
-          {
-          }
         })}
       </div>
     </>

@@ -2,10 +2,8 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 import { GiCannedFish, GiWool, GiMilkCarton, GiLungs } from 'react-icons/gi';
 // import { PawPrint } from './imgs/pawprint_1076928.svg';
-import { ReactComponent as PawPrint } from './imgs/pawprint_1076928.svg';
 import catCrew from './data.js';
 import Crew from './Components/crew';
-import Mission from './Components/mission';
 
 function App() {
   const alignCenter = {
@@ -15,8 +13,7 @@ function App() {
   };
   const [flip, setFlip] = useState(false);
   const [dataCrew] = useState(catCrew);
-  // console.log(dataCrew);
-  // console.log(catCrew);
+
   return (
     <>
       <div className='background'>
@@ -33,7 +30,6 @@ function App() {
               src={require('./imgs/rocket-flying-through-space.jpg')}
             />
           </ParallaxLayer>
-
           <ParallaxLayer
             offset={0.4}
             speed={-0.2}
@@ -41,11 +37,8 @@ function App() {
               alignCenter,
             }}
           >
-            <h1 style={{ width: '100%', height: '20%', color: 'white' }}>
-              Welcome aboard tuna lovers
-            </h1>
+            <h1 className='main-title'>Welcome aboard tuna lovers</h1>
           </ParallaxLayer>
-
           <ParallaxLayer
             offset={window.innerWidth < 768 ? 1.3 : 1.9}
             speed={-0.2}
@@ -144,18 +137,6 @@ function App() {
                 {/* <PawPrint className='icon2' /> */}
               </h1>
               {/* <img src={require('./imgs/pawprint_1076928.png')} alt='' /> */}
-              {/* <img
-                style={{ width: '20px', height: '20px' }}
-                src={require('./imgs/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration.jpg')}
-              ></img> */}
-              {/* <img
-                style={{ width: '110px', height: '110px', color: 'white' }}
-                src={require('./imgs/9398462_347251.png')}
-              ></img>
-              <img
-                style={{ width: '110px', height: '110px', color: 'white' }}
-                src={require('./imgs/9398462_347251.png')}
-              ></img> */}
             </div>
           </ParallaxLayer>
           <ParallaxLayer
@@ -175,6 +156,9 @@ function App() {
     </>
   );
 }
+
+export default App;
+
 //<a href="https://www.freepik.com/free-photo/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration_21988050.htm#query=spacecraft%20store%20room&position=16&from_view=search&track=ais#position=16&query=spacecraft%20store%20room">Image by user6702303</a> on Freepik
 // <a href="https://www.freepik.com/free-photo/moon-surface-big-planet-background_29302738.htm#&position=0&from_view=collections">Image by wirestock</a> on Freepik
 // <a href="https://www.freepik.com/free-ai-image/one-person-piloting-futuristic-spaceship-outdoors-generated-by-ai_42309548.htm#&position=0&from_view=collections">Image By vecstock</a>
@@ -196,4 +180,3 @@ function App() {
 // <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
 // <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
 // <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
-export default App;
