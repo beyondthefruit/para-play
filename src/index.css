@@ -181,14 +181,16 @@ p {
 }
 
 .cards-sticky {
-  background: rgba(105, 114, 104);
+  /* background: rgba(105, 114, 104); */
+  background: rgb(128, 135, 128);
   text-align: justify;
-  height: 54%;
   width: 90%;
+  height: auto;
   text-align: center;
   border-radius: 10px;
   border: 2px ridge rgba(245, 245, 245);
   box-shadow: 0px 0px 3px 2px rgba(245, 245, 245);
+  padding-bottom: 1rem;
 }
 .cards-sticky h2 {
   padding: 0.5rem 0 0;
@@ -198,9 +200,10 @@ p {
   padding: 0 0.2rem;
 }
 .stick img {
-  width: 240px;
-  height: 135px;
-  padding: 0.5rem;
+  width: 230px;
+  height: 130px;
+  margin: 0.5rem;
+  border: 2px solid rgba(245, 245, 245);
 }
 .stick p {
   font-size: 0.7rem;
@@ -247,8 +250,12 @@ p {
 
 @media screen and (min-width: 400px) {
   .cards-sticky {
-    height: 49%;
     width: 90%;
+  }
+  .stick img {
+    width: 220px;
+    height: 120px;
+    margin: 0.1rem;
   }
   .stick p {
     font-size: 0.9rem;
@@ -260,7 +267,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .cards-sticky {
-    height: 17rem;
+    height: 47%;
     text-align: center;
   }
   .cards-sticky h2 {
@@ -276,20 +283,52 @@ p {
   .text {
     width: 60%;
     height: auto;
+    padding: 0.3rem;
   }
   .text p {
     font-size: 1.1rem;
     text-align: justify;
-    padding: 0.3rem;
   }
   .stick img {
     width: 280px;
     min-width: 280px;
     height: 175px;
-
-    padding: 0.5rem;
   }
   .loot p {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cards-sticky {
+    width: 85%;
+    height: 40%;
+  }
+  .text {
+    width: 65%;
+    padding: 0.5rem 1rem;
+  }
+  .stick {
+    height: 90%;
+    width: 100%;
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards-sticky {
+    height: 37%;
+  }
+
+  .text {
+    width: auto;
+  }
+  .text p {
+    font-size: 1.2rem;
+
+    padding: 0.4rem;
+  }
+  .loot p {
+    font-size: 1.2rem;
   }
 }
