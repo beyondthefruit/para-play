@@ -179,6 +179,11 @@ p {
     font-size: 0.9rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .crew {
+    gap: 30px;
+  }
+}
 
 .cards-sticky {
   /* background: rgba(105, 114, 104); */
@@ -318,6 +323,9 @@ p {
 @media screen and (min-width: 1440px) {
   .cards-sticky {
     height: 37%;
+  }
+  .cards-sticky h2 {
+    font-size: 1.8rem;
   }
 
   .text {
