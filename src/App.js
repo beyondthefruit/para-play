@@ -25,14 +25,56 @@ function App() {
               alignCenter,
             }}
           >
-            <img
+            <picture>
+              <source type='image/webp'></source>
+              <source
+                media='(min-width: 769px)'
+                srcset={require('./imgs/rocket-flying-through-space.webp')}
+              />
+              <source
+                media='(max-width: 768px)'
+                srcset={require('./imgs/medium-rocket-flying-through-space.webp')}
+              />
+              <source
+                media='(max-width: 450px)'
+                srcset={require('./imgs/small-rocket-flying-through-space.webp')}
+              />
+
+              <source type='image/jpeg'></source>
+              <source
+                media='(min-width: 769px)'
+                srcset={require('./imgs/rocket-flying-through-space.jpg')}
+              />
+              <source
+                media='(max-width: 768px)'
+                srcset={require('./imgs/medium-rocket-flying-through-space.jpg')}
+              />
+              <source
+                media='(max-width: 450px)'
+                srcset={require('./imgs/small-rocket-flying-through-space.jpg')}
+              />
+              <img
+                src={require('./imgs/rocket-flying-through-space.jpg')}
+                className='spacecraft'
+                alt='rocket flying'
+              ></img>
+              {/* <img
+                className='spacecraft'
+                src={require('./imgs/rocket-flying-through-space.jpg')}
+                srcset={`${require('./imgs/small-rocket-flying-through-space.jpg')} 450w, ${require('./imgs/medium-rocket-flying-through-space.jpg')} 768w, ${require('./imgs/rocket-flying-through-space.jpg')} 1280w`}
+                sizes='(max-width: 450px) 450px,(max-width: 768px) 768px, 1280px'
+                v
+                rel='preload'
+              /> */}
+            </picture>
+            {/* <img
               className='spacecraft'
               src={require('./imgs/rocket-flying-through-space.jpg')}
               srcset={`${require('./imgs/small-rocket-flying-through-space.jpg')} 450w, ${require('./imgs/medium-rocket-flying-through-space.jpg')} 768w, ${require('./imgs/rocket-flying-through-space.jpg')} 1280w`}
               sizes='(max-width: 450px) 450px,(max-width: 768px) 768px, 1280px'
               alt='rocket flying'
               rel='preload'
-            />
+            /> */}
           </ParallaxLayer>
           <ParallaxLayer
             offset={0.4}
