@@ -6,7 +6,7 @@ const catCrew = [
     role: 'Pilot',
     desc: 'Spacecraft pilot expert',
     funFact:
-      'A master at interstellar karaoke! She has entertained countless galaxies during long space journeys.',
+      'A master at interstellar karaoke! She has entertained countless galaxies during long space journeys',
     like: 'Tuna',
   },
   {
@@ -16,7 +16,7 @@ const catCrew = [
     role: 'Captain',
     desc: 'Was the first cat to reach Mars',
     funFact:
-      'The first feline ever to master the art of zero-gravity acrobatics.',
+      'The first feline ever to master the art of zero-gravity acrobatics',
     like: 'Tuna',
   },
   {
@@ -26,7 +26,7 @@ const catCrew = [
     role: 'Security',
     desc: 'Ex special force',
     funFact:
-      'Renowned for mastering the art of stealthy movement and camouflage. ',
+      'Renowned for mastering the art of stealthy movement and camouflage ',
     like: 'Tuna',
   },
   {
