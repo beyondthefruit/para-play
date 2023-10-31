@@ -6,7 +6,7 @@ const catCrew = [
     role: 'Pilot',
     desc: 'Spacecraft pilot expert',
     funFact:
-      'A master at interstellar karaoke! She has entertained countless galaxies during long space journeys',
+      'A master at interstellar karaoke! She has entertained countless galaxies',
     like: 'Tuna',
   },
   {

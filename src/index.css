@@ -117,7 +117,7 @@ p {
   font-size: 1rem;
 }
 .flip-card-back p {
-  padding: 0 0.1rem;
+  padding: 0.1rem 0.2rem;
 }
 
 @media screen and (min-width: 550px) {
